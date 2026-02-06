@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPINACH mini金糖 - 商品详情</title>
+    <title>SPINACH mini金牛糖 - 产品详情</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* 商品详情页面特定样式 */
+        /* 产品详情页面定制样式 */
         .product-detail {
             padding: 80px 0;
             background-color: #fff;
@@ -73,7 +73,7 @@
             object-fit: cover;
         }
         
-        /* 商品信息区域 */
+        /* 产品信息区域 */
         .product-info {
             flex: 1;
             min-width: 300px;
@@ -120,7 +120,7 @@
         }
         
         .features-list li::before {
-            content: '✓';
+            content: '';
             position: absolute;
             left: 0;
             color: #e91e63;
@@ -167,7 +167,7 @@
             transform: translateY(-2px);
         }
         
-        /* 响应式设计 */
+        /* 响应式设置 */
         @media (max-width: 768px) {
             .product-detail-content {
                 flex-direction: column;
@@ -193,7 +193,7 @@
     </style>
 </head>
 <body>
-    <!-- 导航栏 -->
+    <!-- 公共导航栏 -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -213,7 +213,12 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="index.html" class="nav-link zh">首页</a><a href="index.html" class="nav-link en" style="display: none;">Home</a></li>
-                        <li class="nav-item"><a href="products.html" class="nav-link zh">产品资讯</a><a href="products.html" class="nav-link en" style="display: none;">Products</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link zh">产品列表</a><a href="products.html" class="nav-link en" style="display: none;">Products</a></li>
+                        <li class="nav-item"><a href="brand-introduction.html" class="nav-link zh">品牌介绍</a><a href="brand-introduction.html" class="nav-link en" style="display: none;">Brand Introduction</a></li>
+                        <li class="nav-item"><a href="quality-certification.html" class="nav-link zh">质量与认证</a><a href="quality-certification.html" class="nav-link en" style="display: none;">Quality & Certification</a></li>
+                        <li class="nav-item"><a href="usage-guide.html" class="nav-link zh">使用指南</a><a href="usage-guide.html" class="nav-link en" style="display: none;">Usage Guide</a></li>
+                        <li class="nav-item"><a href="faq.html" class="nav-link zh">常见问题</a><a href="faq.html" class="nav-link en" style="display: none;">FAQ</a></li>
+                        <li class="nav-item"><a href="contact-us.html" class="nav-link zh">联系我们</a><a href="contact-us.html" class="nav-link en" style="display: none;">Contact Us</a></li>
                     </ul>
                 </nav>
                 
@@ -229,7 +234,12 @@
     <div class="mobile-menu" id="mobile-menu">
         <ul class="mobile-nav-list">
             <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link zh">首页</a><a href="index.html" class="mobile-nav-link en" style="display: none;">Home</a></li>
-            <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link zh">产品资讯</a><a href="products.html" class="mobile-nav-link en" style="display: none;">Products</a></li>
+            <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link zh">产品列表</a><a href="products.html" class="mobile-nav-link en" style="display: none;">Products</a></li>
+            <li class="mobile-nav-item"><a href="brand-introduction.html" class="mobile-nav-link zh">品牌介绍</a><a href="brand-introduction.html" class="mobile-nav-link en" style="display: none;">Brand Introduction</a></li>
+            <li class="mobile-nav-item"><a href="quality-certification.html" class="mobile-nav-link zh">质量与认证</a><a href="quality-certification.html" class="mobile-nav-link en" style="display: none;">Quality & Certification</a></li>
+            <li class="mobile-nav-item"><a href="usage-guide.html" class="mobile-nav-link zh">使用指南</a><a href="usage-guide.html" class="mobile-nav-link en" style="display: none;">Usage Guide</a></li>
+            <li class="mobile-nav-item"><a href="faq.html" class="mobile-nav-link zh">常见问题</a><a href="faq.html" class="mobile-nav-link en" style="display: none;">FAQ</a></li>
+            <li class="mobile-nav-item"><a href="contact-us.html" class="mobile-nav-link zh">联系我们</a><a href="contact-us.html" class="mobile-nav-link en" style="display: none;">Contact Us</a></li>
         </ul>
     </div>
     
@@ -238,42 +248,42 @@
         <!-- 页面标题 -->
         <section class="page-title">
             <div class="container">
-                <h1 class="zh">商品详情</h1>
+                <h1 class="zh">产品详情</h1>
                 <h1 class="en" style="display: none;">Product Details</h1>
             </div>
         </section>
         
-        <!-- 商品详情 -->
+        <!-- 产品详情 -->
         <section class="product-detail">
             <div class="container">
                 <div class="product-detail-content">
                     <!-- 图片展示区域 -->
                     <div class="product-images">
                         <div class="main-image">
-                            <img src="images/4.png" alt="SPINACH mini金糖" id="main-product-image">
+                            <img src="images/4.png" alt="SPINACH mini金牛糖" id="main-product-image">
                         </div>
                         <div class="thumbnails">
                             <div class="thumbnail active" data-image="images/4.png">
-                                <img src="images/4.png" alt="SPINACH mini金糖">
+                                <img src="images/4.png" alt="SPINACH mini金牛糖">
                             </div>
                             <div class="thumbnail" data-image="images/11.png">
-                                <img src="images/11.png" alt="SPINACH mini金糖">
+                                <img src="images/11.png" alt="SPINACH mini金牛糖">
                             </div>
                             <div class="thumbnail" data-image="images/18.png">
-                                <img src="images/18.png" alt="SPINACH mini金糖">
+                                <img src="images/18.png" alt="SPINACH mini金牛糖">
                             </div>
                         </div>
                     </div>
                     
-                    <!-- 商品信息区域 -->
+                    <!-- 产品信息区域 -->
                     <div class="product-info">
-                        <h2 class="product-name zh">SPINACH mini金糖</h2>
+                        <h2 class="product-name zh">SPINACH mini金牛糖</h2>
                         <h2 class="product-name en" style="display: none;">SPINACH mini Golden Candy</h2>
                         <!-- <div class="product-price zh">HK$ 780.00</div>
                         <div class="product-price en" style="display: none;">HK$ 780.00</div> -->
                         
                         <div class="product-description">
-                            <p class="zh">SPINACH mini金糖是一款迷你版的菠菜提取物营养精力糖，富含多种维生素和矿物质，小巧便携，随时补充精力。</p>
+                            <p class="zh">SPINACH mini金牛糖是一款迷你版的菠菜提取物营养能量糖，富含多种维生素和矿物质，小巧便携，随时补充能量。</p>
                             <p class="en" style="display: none;">SPINACH mini Golden Candy is a mini version of spinach extract nutritional energy candy, rich in various vitamins and minerals, small and portable, supplement energy anytime.</p>
                             <p class="zh">这款迷你版糖果不仅保持了原有的营养成分，还更加方便携带，适合忙碌的现代生活节奏。</p>
                             <p class="en" style="display: none;">This mini version of candy not only maintains the original nutritional components, but also more convenient to carry, suitable for busy modern life rhythm.</p>
@@ -287,9 +297,9 @@
                                 <li class="en" style="display: none;">Spinach extract as the main ingredient</li>
                                 <li class="zh">富含多种维生素和矿物质</li>
                                 <li class="en" style="display: none;">Rich in various vitamins and minerals</li>
-                                <li class="zh">小巧便携，随时补充精力</li>
+                                <li class="zh">小巧便携，随时补充能量</li>
                                 <li class="en" style="display: none;">Small and portable, supplement energy anytime</li>
-                                <li class="zh">提升精力和活力</li>
+                                <li class="zh">提升能量和活力</li>
                                 <li class="en" style="display: none;">Boosts energy and vitality</li>
                                 <li class="zh">增强免疫力</li>
                                 <li class="en" style="display: none;">Enhances immunity</li>
@@ -312,7 +322,7 @@
         </section>
     </main>
     
-    <!-- 页脚 -->
+    <!-- 公共页脚 -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -322,7 +332,6 @@
         </div>
     </footer>
     
-    <script src="js/script.js"></script>
     <script>
         // 图片切换功能
         document.addEventListener('DOMContentLoaded', function() {
@@ -335,7 +344,7 @@
                     thumbnails.forEach(thumb => thumb.classList.remove('active'));
                     // 添加当前缩略图的active类
                     this.classList.add('active');
-                    // 更换主图片
+                    // 切换主图
                     const imageSrc = this.getAttribute('data-image');
                     mainImage.src = imageSrc;
                     mainImage.alt = this.querySelector('img').alt;
@@ -343,5 +352,18 @@
             });
         });
     </script>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

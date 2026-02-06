@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见问题 - 悍马糖</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 常见问题页面定制样式 */
+        .faq-section {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        
+        .faq-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #333;
+            text-align: center;
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .faq-answer {
+            line-height: 1.8;
+            color: #666;
+        }
+        
+        .faq-answer p {
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .faq-answer li {
+            margin-bottom: 5px;
+        }
+        
+        .important-note {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-left: 4px solid #1e90ff;
+            border-radius: 8px;
+        }
+        
+        .important-note-title {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        /* 响应式设置 */
+        @media (max-width: 768px) {
+            .faq-section {
+                padding: 40px 0;
+            }
+            
+            .faq-title {
+                font-size: 1.5rem;
+            }
+            
+            .faq-item {
+                padding: 15px;
+            }
+            
+            .faq-question {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 公共导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="悍马糖">
+                    </a>
+                </div>
+                
+                <!-- 语言切换 -->
+                <div class="language-switch">
+                    <button id="zh-btn" class="lang-btn active">中文</button>
+                    <button id="en-btn" class="lang-btn">English</button>
+                </div>
+                
+                <!-- 导航菜单 -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link zh">首页</a><a href="index.html" class="nav-link en" style="display: none;">Home</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link zh">产品列表</a><a href="products.html" class="nav-link en" style="display: none;">Products</a></li>
+                        <li class="nav-item"><a href="brand-introduction.html" class="nav-link zh">品牌介绍</a><a href="brand-introduction.html" class="nav-link en" style="display: none;">Brand Introduction</a></li>
+                        <li class="nav-item"><a href="quality-certification.html" class="nav-link zh">质量与认证</a><a href="quality-certification.html" class="nav-link en" style="display: none;">Quality & Certification</a></li>
+                        <li class="nav-item"><a href="usage-guide.html" class="nav-link zh">使用指南</a><a href="usage-guide.html" class="nav-link en" style="display: none;">Usage Guide</a></li>
+                        <li class="nav-item"><a href="faq.html" class="nav-link zh">常见问题</a><a href="faq.html" class="nav-link en" style="display: none;">FAQ</a></li>
+                        <li class="nav-item"><a href="contact-us.html" class="nav-link zh">联系我们</a><a href="contact-us.html" class="nav-link en" style="display: none;">Contact Us</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- 移动端菜单按钮 -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 移动端导航菜单 -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link zh">首页</a><a href="index.html" class="mobile-nav-link en" style="display: none;">Home</a></li>
+            <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link zh">产品列表</a><a href="products.html" class="mobile-nav-link en" style="display: none;">Products</a></li>
+            <li class="mobile-nav-item"><a href="brand-introduction.html" class="mobile-nav-link zh">品牌介绍</a><a href="brand-introduction.html" class="mobile-nav-link en" style="display: none;">Brand Introduction</a></li>
+            <li class="mobile-nav-item"><a href="quality-certification.html" class="mobile-nav-link zh">质量与认证</a><a href="quality-certification.html" class="mobile-nav-link en" style="display: none;">Quality & Certification</a></li>
+            <li class="mobile-nav-item"><a href="usage-guide.html" class="mobile-nav-link zh">使用指南</a><a href="usage-guide.html" class="mobile-nav-link en" style="display: none;">Usage Guide</a></li>
+            <li class="mobile-nav-item"><a href="faq.html" class="mobile-nav-link zh">常见问题</a><a href="faq.html" class="mobile-nav-link en" style="display: none;">FAQ</a></li>
+            <li class="mobile-nav-item"><a href="contact-us.html" class="mobile-nav-link zh">联系我们</a><a href="contact-us.html" class="mobile-nav-link en" style="display: none;">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <!-- 主内容区 -->
+    <main>
+        <!-- 页面标题 -->
+        <!-- <section class="page-title">
+            <div class="container">
+                <h1 class="zh">常见问题</h1>
+                <h1 class="en" style="display: none;">FAQ</h1>
+            </div>
+        </section> -->
+        
+        <!-- 常见问题 -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-content">
+                    <h2 class="faq-title zh">常见问题解答</h2>
+                    <h2 class="faq-title en" style="display: none;">Frequently Asked Questions</h2>
+                    
+                    <h3 class="zh" style="font-size: 1.5rem; margin-bottom: 30px; color: #333;">悍马人参咖啡糖（Hamer Candy）</h3>
+                    <h3 class="en" style="font-size: 1.5rem; margin-bottom: 30px; color: #333; display: none;">Hamer Ginseng Coffee Candy</h3>
+                    
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">1. Hamer 人参咖啡糖是什么类型的产品？</h4>
+                        <h4 class="faq-question en" style="display: none;">1. What type of product is Hamer Ginseng Coffee Candy?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">Hamer 人参咖啡糖是一款以多种植物来源与营养成分为基础研发的健康食品，适用于成人在日常生活中进行营养补充与活力支持。</p>
+                            <p class="en" style="display: none;">Hamer Ginseng Coffee Candy is a health food developed based on various plant sources and nutritional ingredients, suitable for adults to supplement nutrition and support vitality in daily life.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">2. Hamer 人参咖啡糖是天然食品吗？</h4>
+                        <h4 class="faq-question en" style="display: none;">2. Is Hamer Ginseng Coffee Candy a natural food?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">Hamer 人参咖啡糖采用多种植物来源与营养成分进行配方设计，强调营养平衡与温和支持理念，适合作为日常健康管理的一部分。</p>
+                            <p class="en" style="display: none;">Hamer Ginseng Coffee Candy uses a variety of plant sources and nutritional ingredients in its formula design, emphasizing the concept of nutritional balance and gentle support, suitable as part of daily health management.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">3. 食用 Hamer 人参咖啡糖安全吗？</h4>
+                        <h4 class="faq-question en" style="display: none;">3. Is it safe to consume Hamer Ginseng Coffee Candy?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">Hamer 人参咖啡糖在生产过程中遵循规范化的质量与食品安全管理流程，原料经过筛选与检测，符合相关食品安全标准要求，可在合理用量下安心食用。</p>
+                            <p class="en" style="display: none;">Hamer Ginseng Coffee Candy follows standardized quality and food safety management processes during production, with raw materials screened and tested to meet relevant food safety standards, and can be consumed with confidence in reasonable amounts.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">4. 所有人都适合食用 Hamer 人参咖啡糖吗？</h4>
+                        <h4 class="faq-question en" style="display: none;">4. Is Hamer Ginseng Coffee Candy suitable for everyone?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">Hamer 人参咖啡糖适合成年人食用。</p>
+                            <p class="zh">以下人群不建议食用或需谨慎使用：</p>
+                            <ul class="zh">
+                                <li>未成年人</li>
+                                <li>孕期及哺乳期女性</li>
+                                <li>对产品成分过敏者</li>
+                                <li>有特殊健康状况或正在服用药物者</li>
+                            </ul>
+                            <p class="zh">如有疑问，建议在食用前咨询专业人士。</p>
+                            
+                            <p class="en" style="display: none;">Hamer Ginseng Coffee Candy is suitable for adults.</p>
+                            <p class="en" style="display: none;">The following groups are not recommended to consume or need to use with caution:</p>
+                            <ul class="en" style="display: none;">
+                                <li>Minors</li>
+                                <li>Pregnant and breastfeeding women</li>
+                                <li>People allergic to product ingredients</li>
+                                <li>People with special health conditions or taking medications</li>
+                            </ul>
+                            <p class="en" style="display: none;">If you have any questions, it is recommended to consult a professional before consumption.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">5. 如果儿童不小心误食了怎么办？</h4>
+                        <h4 class="faq-question en" style="display: none;">5. What should I do if a child accidentally ingests it?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">本产品为健康食品，但不建议儿童食用。</p>
+                            <p class="zh">如儿童误食，通常无需特殊处理。如出现任何不适情况，请及时咨询医生或专业人士。</p>
+                            <p class="en" style="display: none;">This product is a health food, but it is not recommended for children.</p>
+                            <p class="en" style="display: none;">If a child accidentally ingests it, no special treatment is usually needed. If any discomfort occurs, please consult a doctor or professional promptly.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 6 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">6. 可以长期食用 Hamer 人参咖啡糖吗？</h4>
+                        <h4 class="faq-question en" style="display: none;">6. Can Hamer Ginseng Coffee Candy be consumed long-term?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">Hamer 人参咖啡糖可作为日常营养补充的一部分。</p>
+                            <p class="zh">建议按照产品包装标示合理食用，并配合均衡饮食与良好生活习惯。如计划长期食用，可根据个人情况咨询专业人士建议。</p>
+                            <p class="en" style="display: none;">Hamer Ginseng Coffee Candy can be part of daily nutritional supplementation.</p>
+                            <p class="en" style="display: none;">It is recommended to consume it reasonably according to the product packaging instructions, and to combine it with a balanced diet and good living habits. If planning to consume it long-term, you can consult a professional for advice based on your personal situation.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 7 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">7. 食用 Hamer 人参咖啡糖会产生依赖性吗？</h4>
+                        <h4 class="faq-question en" style="display: none;">7. Will consuming Hamer Ginseng Coffee Candy cause dependence?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">Hamer 人参咖啡糖为健康食品，并非药品。</p>
+                            <p class="zh">在合理食用的前提下，不会产生依赖性。</p>
+                            <p class="en" style="display: none;">Hamer Ginseng Coffee Candy is a health food, not a medicine.</p>
+                            <p class="en" style="display: none;">When consumed reasonably, it will not cause dependence.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 8 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">8. 食用 Hamer 人参咖啡糖有什么作用？</h4>
+                        <h4 class="faq-question en" style="display: none;">8. What are the effects of consuming Hamer Ginseng Coffee Candy?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">Hamer 人参咖啡糖主要用于支持日常活力、能量状态与整体健康管理，适合生活节奏较快、需要稳定营养支持的成年人。</p>
+                            <p class="en" style="display: none;">Hamer Ginseng Coffee Candy is mainly used to support daily vitality, energy status and overall health management, suitable for adults with a fast pace of life who need stable nutritional support.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 9 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">9. Hamer 人参咖啡糖应该如何食用？</h4>
+                        <h4 class="faq-question en" style="display: none;">9. How should Hamer Ginseng Coffee Candy be consumed?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">建议按照产品包装上的使用说明食用。</p>
+                            <p class="zh">通常为每次 1 粒，置于口中含化，请勿直接吞服。</p>
+                            <p class="zh">不同个体的体验可能因体质、饮食与生活方式不同而有所差异。</p>
+                            <p class="en" style="display: none;">It is recommended to consume it according to the instructions on the product packaging.</p>
+                            <p class="en" style="display: none;">Usually 1 piece each time, placed in the mouth to dissolve, do not swallow directly.</p>
+                            <p class="en" style="display: none;">Different individuals may have different experiences due to differences in physical constitution, diet and lifestyle.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 10 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">10. 食用 Hamer 人参咖啡糖后可以饮酒吗？</h4>
+                        <h4 class="faq-question en" style="display: none;">10. Can I drink alcohol after consuming Hamer Ginseng Coffee Candy?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">建议避免在短时间内大量饮酒。</p>
+                            <p class="zh">如有饮酒习惯，建议合理间隔时间，并关注自身身体状态。</p>
+                            <p class="en" style="display: none;">It is recommended to avoid heavy drinking in a short period of time.</p>
+                            <p class="en" style="display: none;">If you have drinking habits, it is recommended to have a reasonable interval and pay attention to your physical condition.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 11 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">11. 女性可以食用 Hamer 人参咖啡糖吗？</h4>
+                        <h4 class="faq-question en" style="display: none;">11. Can women consume Hamer Ginseng Coffee Candy?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">Hamer 人参咖啡糖为一款针对成年男性营养需求研发的健康食品，其配方设计主要围绕男性日常活力与能量支持进行优化。</p>
+                            <p class="zh">由于男性与女性在生理结构及营养需求方面存在差异，不建议女性将 Hamer 人参咖啡糖作为常规营养补充产品食用。</p>
+                            <p class="zh">针对女性人群，Hamer 品牌推出了专为女性研发的咖啡系列产品——Sexy Cat 悍马咖啡，其配方更符合女性的营养需求与使用习惯，更适合女性选择。</p>
+                            <p class="en" style="display: none;">Hamer Ginseng Coffee Candy is a health food developed for the nutritional needs of adult men, with its formula design mainly optimized around men's daily vitality and energy support.</p>
+                            <p class="en" style="display: none;">Due to differences in physical structure and nutritional needs between men and women, it is not recommended for women to consume Hamer Ginseng Coffee Candy as a regular nutritional supplement.</p>
+                            <p class="en" style="display: none;">For women, the Hamer brand has launched a coffee series product specifically developed for women - Sexy Cat Hamer Coffee, whose formula is more in line with women's nutritional needs and usage habits, and is more suitable for women's choice.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 12 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">12. 可以与其他营养产品一起食用吗？</h4>
+                        <h4 class="faq-question en" style="display: none;">12. Can it be consumed with other nutritional products?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">一般情况下可以搭配其他营养产品食用，但建议注意整体营养摄入情况。如正在同时食用多种营养补充品，建议咨询专业人士。</p>
+                            <p class="en" style="display: none;">It can generally be consumed with other nutritional products, but it is recommended to pay attention to overall nutritional intake. If you are consuming multiple nutritional supplements at the same time, it is recommended to consult a professional.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 13 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">13. 食用后如出现不适反应该怎么办？</h4>
+                        <h4 class="faq-question en" style="display: none;">13. What should I do if I experience discomfort after consumption?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">如在食用过程中出现任何不适反应，请立即停止食用，并咨询医生或专业人士。个体体验可能存在差异，请以自身身体反应为准。</p>
+                            <p class="en" style="display: none;">If you experience any discomfort during consumption, please stop eating immediately and consult a doctor or professional. Individual experiences may vary, please rely on your own physical reactions.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 14 -->
+                    <div class="faq-item">
+                        <h4 class="faq-question zh">14. 为什么 Hamer 人参咖啡糖采用糖果形式？</h4>
+                        <h4 class="faq-question en" style="display: none;">14. Why does Hamer Ginseng Coffee Candy use candy form?</h4>
+                        <div class="faq-answer">
+                            <p class="zh">糖果形态便于携带与食用，有助于提升使用便利性。</p>
+                            <p class="zh">含化方式能够提升整体使用体验，适合多种日常生活场景。</p>
+                            <p class="en" style="display: none;">The candy form is easy to carry and consume, helping to improve usage convenience.</p>
+                            <p class="en" style="display: none;">The dissolving method can enhance the overall user experience and is suitable for various daily life scenarios.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Important Note -->
+                    <div class="important-note">
+                        <h3 class="important-note-title zh">重要提示</h3>
+                        <h3 class="important-note-title en" style="display: none;">Important Note</h3>
+                        <p class="zh">本产品为健康食品，并非药品。</p>
+                        <p class="zh">不用于诊断、治疗、预防或治愈任何疾病。</p>
+                        <p class="zh">不同个体的体验可能存在差异。</p>
+                        
+                        <p class="en" style="display: none;">This product is a health food, not a medicine.</p>
+                        <p class="en" style="display: none;">It is not used to diagnose, treat, prevent or cure any disease.</p>
+                        <p class="en" style="display: none;">Different individuals may have different experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- 公共页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright zh">© 2026 悍马糖香港官网. 保留所有权利.</p>
+                <p class="copyright en" style="display: none;">© 2026 Hamer Candy Hong Kong Official Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

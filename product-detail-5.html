@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAM 62I 彩虹糖 - 商品详情</title>
+    <title>MIRACLEGOLD 金牛糖 - 产品详情</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* 商品详情页面特定样式 */
+        /* 产品详情页面定制样式 */
         .product-detail {
             padding: 80px 0;
             background-color: #fff;
@@ -73,7 +73,7 @@
             object-fit: cover;
         }
         
-        /* 商品信息区域 */
+        /* 产品信息区域 */
         .product-info {
             flex: 1;
             min-width: 300px;
@@ -120,7 +120,7 @@
         }
         
         .features-list li::before {
-            content: '✓';
+            content: '';
             position: absolute;
             left: 0;
             color: #e91e63;
@@ -167,7 +167,7 @@
             transform: translateY(-2px);
         }
         
-        /* 响应式设计 */
+        /* 响应式设置 */
         @media (max-width: 768px) {
             .product-detail-content {
                 flex-direction: column;
@@ -193,7 +193,7 @@
     </style>
 </head>
 <body>
-    <!-- 导航栏 -->
+    <!-- 公共导航栏 -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -213,7 +213,12 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="index.html" class="nav-link zh">首页</a><a href="index.html" class="nav-link en" style="display: none;">Home</a></li>
-                        <li class="nav-item"><a href="products.html" class="nav-link zh">产品资讯</a><a href="products.html" class="nav-link en" style="display: none;">Products</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link zh">产品列表</a><a href="products.html" class="nav-link en" style="display: none;">Products</a></li>
+                        <li class="nav-item"><a href="brand-introduction.html" class="nav-link zh">品牌介绍</a><a href="brand-introduction.html" class="nav-link en" style="display: none;">Brand Introduction</a></li>
+                        <li class="nav-item"><a href="quality-certification.html" class="nav-link zh">质量与认证</a><a href="quality-certification.html" class="nav-link en" style="display: none;">Quality & Certification</a></li>
+                        <li class="nav-item"><a href="usage-guide.html" class="nav-link zh">使用指南</a><a href="usage-guide.html" class="nav-link en" style="display: none;">Usage Guide</a></li>
+                        <li class="nav-item"><a href="faq.html" class="nav-link zh">常见问题</a><a href="faq.html" class="nav-link en" style="display: none;">FAQ</a></li>
+                        <li class="nav-item"><a href="contact-us.html" class="nav-link zh">联系我们</a><a href="contact-us.html" class="nav-link en" style="display: none;">Contact Us</a></li>
                     </ul>
                 </nav>
                 
@@ -229,7 +234,12 @@
     <div class="mobile-menu" id="mobile-menu">
         <ul class="mobile-nav-list">
             <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link zh">首页</a><a href="index.html" class="mobile-nav-link en" style="display: none;">Home</a></li>
-            <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link zh">产品资讯</a><a href="products.html" class="mobile-nav-link en" style="display: none;">Products</a></li>
+            <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link zh">产品列表</a><a href="products.html" class="mobile-nav-link en" style="display: none;">Products</a></li>
+            <li class="mobile-nav-item"><a href="brand-introduction.html" class="mobile-nav-link zh">品牌介绍</a><a href="brand-introduction.html" class="mobile-nav-link en" style="display: none;">Brand Introduction</a></li>
+            <li class="mobile-nav-item"><a href="quality-certification.html" class="mobile-nav-link zh">质量与认证</a><a href="quality-certification.html" class="mobile-nav-link en" style="display: none;">Quality & Certification</a></li>
+            <li class="mobile-nav-item"><a href="usage-guide.html" class="mobile-nav-link zh">使用指南</a><a href="usage-guide.html" class="mobile-nav-link en" style="display: none;">Usage Guide</a></li>
+            <li class="mobile-nav-item"><a href="faq.html" class="mobile-nav-link zh">常见问题</a><a href="faq.html" class="mobile-nav-link en" style="display: none;">FAQ</a></li>
+            <li class="mobile-nav-item"><a href="contact-us.html" class="mobile-nav-link zh">联系我们</a><a href="contact-us.html" class="mobile-nav-link en" style="display: none;">Contact Us</a></li>
         </ul>
     </div>
     
@@ -238,43 +248,43 @@
         <!-- 页面标题 -->
         <section class="page-title">
             <div class="container">
-                <h1 class="zh">商品详情</h1>
+                <h1 class="zh">产品详情</h1>
                 <h1 class="en" style="display: none;">Product Details</h1>
             </div>
         </section>
         
-        <!-- 商品详情 -->
+        <!-- 产品详情 -->
         <section class="product-detail">
             <div class="container">
                 <div class="product-detail-content">
                     <!-- 图片展示区域 -->
                     <div class="product-images">
                         <div class="main-image">
-                            <img src="images/5.png" alt="HAM 62I 彩虹糖" id="main-product-image">
+                            <img src="images/5.png" alt="悍马糖" id="main-product-image">
                         </div>
                         <div class="thumbnails">
                             <div class="thumbnail active" data-image="images/5.png">
-                                <img src="images/5.png" alt="HAM 62I 彩虹糖">
+                                <img src="images/5.png" alt="悍马糖">
                             </div>
                             <div class="thumbnail" data-image="images/12.png">
-                                <img src="images/12.png" alt="HAM 62I 彩虹糖">
+                                <img src="images/12.png" alt="悍马糖">
                             </div>
                             <div class="thumbnail" data-image="images/19.png">
-                                <img src="images/19.png" alt="HAM 62I 彩虹糖">
+                                <img src="images/19.png" alt="悍马糖">
                             </div>
                         </div>
                     </div>
                     
-                    <!-- 商品信息区域 -->
+                    <!-- 产品信息区域 -->
                     <div class="product-info">
-                        <h2 class="product-name zh">HAM 62I 彩虹糖</h2>
-                        <h2 class="product-name en" style="display: none;">HAM 62I Rainbow Candy</h2>
+                        <h2 class="product-name zh">MIRACLEGOLD 金牛糖</h2>
+                        <h2 class="product-name en" style="display: none;">MIRACLEGOLD Golden Ox Candy</h2>
                         <!-- <div class="product-price zh">HK$ 980.00</div>
                         <div class="product-price en" style="display: none;">HK$ 980.00</div> -->
                         
                         <div class="product-description">
-                            <p class="zh">HAM 62I 彩虹糖是一款色彩丰富的营养精力糖，含有多种天然植物提取物，能够全面补充身体所需的营养元素。</p>
-                            <p class="en" style="display: none;">HAM 62I Rainbow Candy is a colorful nutritional energy candy, containing a variety of natural plant extracts, which can fully supplement the nutritional elements needed by the body.</p>
+                            <p class="zh">MIRACLEGOLD 金牛糖是一款色彩丰富的营养能量糖，含有多种天然植物提取物，能够全面补充身体所需的营养元素。</p>
+                            <p class="en" style="display: none;">MIRACLEGOLD Golden Ox Candy is a colorful nutritional energy candy, containing a variety of natural plant extracts, which can fully supplement the nutritional elements needed by the body.</p>
                             <p class="zh">这款糖果不仅外观吸引人，口感也非常好，是一款集营养与美味于一体的健康食品。</p>
                             <p class="en" style="display: none;">This candy not only has an attractive appearance, but also has a very good taste. It is a healthy food that combines nutrition and deliciousness.</p>
                         </div>
@@ -291,7 +301,7 @@
                                 <li class="en" style="display: none;">Colorful, attractive appearance</li>
                                 <li class="zh">口感美味</li>
                                 <li class="en" style="display: none;">Delicious taste</li>
-                                <li class="zh">提升精力和活力</li>
+                                <li class="zh">提升能量和活力</li>
                                 <li class="en" style="display: none;">Boosts energy and vitality</li>
                                 <li class="zh">增强免疫力</li>
                                 <li class="en" style="display: none;">Enhances immunity</li>
@@ -314,17 +324,6 @@
         </section>
     </main>
     
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="copyright zh">© 2026 悍马糖香港官网. 保留所有权利.</p>
-                <p class="copyright en" style="display: none;">© 2026 Hamer Candy Hong Kong Official Website. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="js/script.js"></script>
     <script>
         // 图片切换功能
         document.addEventListener('DOMContentLoaded', function() {
@@ -337,7 +336,7 @@
                     thumbnails.forEach(thumb => thumb.classList.remove('active'));
                     // 添加当前缩略图的active类
                     this.classList.add('active');
-                    // 更换主图片
+                    // 切换主图
                     const imageSrc = this.getAttribute('data-image');
                     mainImage.src = imageSrc;
                     mainImage.alt = this.querySelector('img').alt;
@@ -345,5 +344,28 @@
             });
         });
     </script>
+    
+    <!-- 公共页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright zh">© 2026 悍马糖香港官网. 保留所有权利.</p>
+                <p class="copyright en" style="display: none;">© 2026 Hamer Candy Hong Kong Official Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>质量与认证 - 悍马糖香港官网</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 质量与认证页面样式 */
+        .quality-certification {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .content-section {
+            margin-bottom: 60px;
+        }
+        
+        .content-section p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #666;
+        }
+        
+        .certification-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .certification-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            color: #666;
+        }
+        
+        .certification-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #e91e63;
+            font-weight: bold;
+        }
+        
+        /* 响应式设置 */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 公共导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="悍马糖">
+                    </a>
+                </div>
+                
+                <!-- 语言切换 -->
+                <div class="language-switch">
+                    <button id="zh-btn" class="lang-btn active">中文</button>
+                    <button id="en-btn" class="lang-btn">English</button>
+                </div>
+                
+                <!-- 导航菜单 -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link zh">首页</a><a href="index.html" class="nav-link en" style="display: none;">Home</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link zh">产品列表</a><a href="products.html" class="nav-link en" style="display: none;">Products</a></li>
+                        <li class="nav-item"><a href="brand-introduction.html" class="nav-link zh">品牌介绍</a><a href="brand-introduction.html" class="nav-link en" style="display: none;">Brand Introduction</a></li>
+                        <li class="nav-item"><a href="quality-certification.html" class="nav-link zh">质量与认证</a><a href="quality-certification.html" class="nav-link en" style="display: none;">Quality & Certification</a></li>
+                        <li class="nav-item"><a href="usage-guide.html" class="nav-link zh">使用指南</a><a href="usage-guide.html" class="nav-link en" style="display: none;">Usage Guide</a></li>
+                        <li class="nav-item"><a href="faq.html" class="nav-link zh">常见问题</a><a href="faq.html" class="nav-link en" style="display: none;">FAQ</a></li>
+                        <li class="nav-item"><a href="contact-us.html" class="nav-link zh">联系我们</a><a href="contact-us.html" class="nav-link en" style="display: none;">Contact Us</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- 移动端菜单按钮 -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 移动端导航菜单 -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link zh">首页</a><a href="index.html" class="mobile-nav-link en" style="display: none;">Home</a></li>
+            <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link zh">产品列表</a><a href="products.html" class="mobile-nav-link en" style="display: none;">Products</a></li>
+            <li class="mobile-nav-item"><a href="brand-introduction.html" class="mobile-nav-link zh">品牌介绍</a><a href="brand-introduction.html" class="mobile-nav-link en" style="display: none;">Brand Introduction</a></li>
+            <li class="mobile-nav-item"><a href="quality-certification.html" class="mobile-nav-link zh">质量与认证</a><a href="quality-certification.html" class="mobile-nav-link en" style="display: none;">Quality & Certification</a></li>
+            <li class="mobile-nav-item"><a href="usage-guide.html" class="mobile-nav-link zh">使用指南</a><a href="usage-guide.html" class="mobile-nav-link en" style="display: none;">Usage Guide</a></li>
+            <li class="mobile-nav-item"><a href="faq.html" class="mobile-nav-link zh">常见问题</a><a href="faq.html" class="mobile-nav-link en" style="display: none;">FAQ</a></li>
+            <li class="mobile-nav-item"><a href="contact-us.html" class="mobile-nav-link zh">联系我们</a><a href="contact-us.html" class="mobile-nav-link en" style="display: none;">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <!-- 主内容区 -->
+    <main>
+        <!-- 页面标题 -->
+        <!-- <section class="page-title">
+            <div class="container">
+                <h1 class="zh">质量与认证</h1>
+                <h1 class="en" style="display: none;">Quality & Certification</h1>
+            </div>
+        </section> -->
+        
+        <!-- 质量与认证内容 -->
+        <section class="quality-certification">
+            <div class="container">
+                <h2 class="section-title zh" style="font-size: 28px;">质量与认证</h2>
+                <h2 class="section-title en" style="font-size: 28px; display: none;">Quality & Certification</h2>
+                
+                <div class="content-section">
+                    <p class="zh">在 Hamer，产品质量与安全始终是我们最核心的承诺。从原料甄选、生产制造到成品出厂，每一个环节都严格遵循既定的质量管理与食品安全体系，以确保产品的稳定性、可靠性与消费者信任。</p>
+                    <p class="en" style="display: none;">At Hamer, product quality and safety are always our core commitments. From raw material selection, production manufacturing to finished product delivery, every step strictly follows the established quality management and food safety system to ensure product stability, reliability, and consumer trust.</p>
+                </div>
+                
+                <div class="content-section">
+                    <h3 class="section-subtitle zh">生产制造标准</h3>
+                    <h3 class="section-subtitle en" style="display: none;">Production Standards</h3>
+                    <p class="zh">Hamer 产品均在符合国际及本地相关标准的生产设施中制造。生产过程中实施严格的管理与控制，包括：</p>
+                    <p class="en" style="display: none;">Hamer products are manufactured in production facilities that comply with international and local relevant standards. Strict management and control are implemented during the production process, including:</p>
+                    <ul class="certification-list">
+                        <li class="zh">原料筛选与验证</li>
+                        <li class="en" style="display: none;">Raw material screening and verification</li>
+                        <li class="zh">受控的生产环境</li>
+                        <li class="en" style="display: none;">Controlled production environment</li>
+                        <li class="zh">标准化的操作流程</li>
+                        <li class="en" style="display: none;">Standardized operating procedures</li>
+                        <li class="zh">批次级质量检测</li>
+                        <li class="en" style="display: none;">Batch-level quality testing</li>
+                    </ul>
+                    <p class="zh">通过这些措施，确保每一款产品在进入市场前均符合既定的质量与安全要求。</p>
+                    <p class="en" style="display: none;">Through these measures, we ensure that every product meets the established quality and safety requirements before entering the market.</p>
+                </div>
+                
+                <div class="content-section">
+                    <h3 class="section-subtitle zh">质量管理体系</h3>
+                    <h3 class="section-subtitle en" style="display: none;">Quality Management System</h3>
+                    <p class="zh">Hamer 建立并实施系统化的质量管理体系，以保障产品品质的稳定性与生产运营的规范性。该体系重点关注：</p>
+                    <p class="en" style="display: none;">Hamer has established and implemented a systematic quality management system to ensure the stability of product quality and the standardization of production operations. The system focuses on:</p>
+                    <ul class="certification-list">
+                        <li class="zh">生产过程的持续监控</li>
+                        <li class="en" style="display: none;">Continuous monitoring of the production process</li>
+                        <li class="zh">潜在风险的识别与预防</li>
+                        <li class="en" style="display: none;">Identification and prevention of potential risks</li>
+                        <li class="zh">生产记录与可追溯性管理</li>
+                        <li class="en" style="display: none;">Production records and traceability management</li>
+                        <li class="zh">生产与管理流程的持续优化</li>
+                        <li class="en" style="display: none;">Continuous optimization of production and management processes</li>
+                    </ul>
+                    <p class="zh">通过系统化的质量管理原则，Hamer 在各个生产阶段持续保持稳定的产品品质。</p>
+                    <p class="en" style="display: none;">Through systematic quality management principles, Hamer continuously maintains stable product quality at all production stages.</p>
+                </div>
+                
+                <div class="content-section">
+                    <h3 class="section-subtitle zh">食品安全保障</h3>
+                    <h3 class="section-subtitle en" style="display: none;">Food Safety Assurance</h3>
+                    <p class="zh">食品安全是 Hamer 生产管理中的重要组成部分。公司在生产过程中遵循成熟的食品安全管理框架，重点强调预防性控制与卫生管理。</p>
+                    <p class="en" style="display: none;">Food safety is an important part of Hamer's production management. The company follows a mature food safety management framework during the production process, with emphasis on preventive control and hygiene management.</p>
+                    <p class="zh">相关管理措施有助于降低生产过程中的安全风险，确保产品在符合食品安全要求的条件下完成生产。</p>
+                    <p class="en" style="display: none;">Relevant management measures help reduce safety risks during the production process and ensure that products are produced under conditions that meet food safety requirements.</p>
+                </div>
+                
+                <div class="content-section">
+                    <h3 class="section-subtitle zh">认证与合规</h3>
+                    <h3 class="section-subtitle en" style="display: none;">Certification & Compliance</h3>
+                    <p class="zh">Hamer 的产品与生产流程符合多项国际与马来西亚本地认可的标准与规范，包括但不限于：</p>
+                    <p class="en" style="display: none;">Hamer's products and production processes comply with multiple internationally and locally recognized standards and specifications in Malaysia, including but not limited to:</p>
+                    <ul class="certification-list">
+                        <li class="zh">GMP（良好生产规范）—— 确保生产环境、卫生条件及流程管理符合规范</li>
+                        <li class="en" style="display: none;">GMP (Good Manufacturing Practice) - Ensuring production environment, hygiene conditions, and process management comply with specifications</li>
+                        <li class="zh">HACCP（食品安全关键控制点）—— 系统性识别并管理食品安全风险</li>
+                        <li class="en" style="display: none;">HACCP (Hazard Analysis and Critical Control Points) - Systematically identifying and managing food safety risks</li>
+                        <li class="zh">ISO 22000 —— 食品安全管理体系认证</li>
+                        <li class="en" style="display: none;">ISO 22000 - Food safety management system certification</li>
+                        <li class="zh">ISO 9001 —— 质量管理体系认证</li>
+                        <li class="en" style="display: none;">ISO 9001 - Quality management system certification</li>
+                        <li class="zh">MeSTI（马来西亚）—— 符合马来西亚食品安全监管要求</li>
+                        <li class="en" style="display: none;">MeSTI (Malaysia) - Compliance with Malaysian food safety regulatory requirements</li>
+                        <li class="zh">清真认证（Halal）（如适用）—— 符合授权机构的清真标准</li>
+                        <li class="en" style="display: none;">Halal certification (if applicable) - Compliance with authorized halal standards</li>
+                        <li class="zh">马来西亚制造（Made in Malaysia）—— 产品在马来西亚本地生产制造</li>
+                        <li class="en" style="display: none;">Made in Malaysia - Products are manufactured locally in Malaysia</li>
+                    </ul>
+                    <p class="zh">上述认证与合规标准体现了 Hamer 对生产规范与质量管理的高度重视。</p>
+                    <p class="en" style="display: none;">The above certifications and compliance standards reflect Hamer's high emphasis on production standards and quality management.</p>
+                </div>
+                
+                <div class="content-section">
+                    <h3 class="section-subtitle zh">原料管理与可追溯性</h3>
+                    <h3 class="section-subtitle en" style="display: none;">Raw Material Management & Traceability</h3>
+                    <p class="zh">Hamer 对原料的采购、储存与使用实行严格管理。所有原料均依据既定的质量标准进行甄选，并在受控条件下进行处理与使用。</p>
+                    <p class="en" style="display: none;">Hamer implements strict management of raw material procurement, storage, and use. All raw materials are selected based on established quality standards and processed and used under controlled conditions.</p>
+                    <p class="zh">公司建立了完善的可追溯系统，以支持对原料与成品在整个生产周期中的监控，提升生产透明度与管理可靠性。</p>
+                    <p class="en" style="display: none;">The company has established a comprehensive traceability system to support the monitoring of raw materials and finished products throughout the production cycle, enhancing production transparency and management reliability.</p>
+                </div>
+                
+                <div class="content-section">
+                    <h3 class="section-subtitle zh">我们的承诺</h3>
+                    <h3 class="section-subtitle en" style="display: none;">Our Commitment</h3>
+                    <p class="zh">Hamer 致力于为消费者提供符合高标准质量、安全与稳定性的产品。通过持续评估、系统优化及对相关标准的严格遵循，我们不断强化自身的质量保障体系。</p>
+                    <p class="en" style="display: none;">Hamer is committed to providing consumers with products that meet high standards of quality, safety, and stability. Through continuous evaluation, system optimization, and strict adherence to relevant standards, we continuously strengthen our quality assurance system.</p>
+                </div>
+                
+                <div class="content-section">
+                    <h3 class="section-subtitle zh">重要声明</h3>
+                    <h3 class="section-subtitle en" style="display: none;">Important Statement</h3>
+                    <p class="zh">本页面所提及的认证与标准，适用于生产流程与质量管理体系。不代表任何医疗用途或效果承诺。</p>
+                    <p class="en" style="display: none;">The certifications and standards mentioned on this page apply to production processes and quality management systems. They do not represent any medical use or efficacy promises.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- 公共页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright zh">© 2026 悍马糖香港官网. 保留所有权利.</p>
+                <p class="copyright en" style="display: none;">© 2026 Hamer Candy Hong Kong Official Website. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
